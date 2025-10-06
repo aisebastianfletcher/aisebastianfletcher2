@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sebastian Fletcher – AI Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <header>
+    <h1>Sebastian Fletcher</h1>
+    <p>AI Engineer</p>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#demos">Demos</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <a href="#chatbot">Sebastian's Assistant</a>
+    </nav>
+  </header>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+        <li>AI & Prompting: Prompt design, optimization, context management, workflow automation</li>
+        <li>Programming: Python basic</li>
+        <li>Data Handling</li>
+        <li>Research & Communication</li>
+        <li>Languages: English, Spanish</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="demos">
+    <h2>Bot Demos</h2>
+    <div class="demos-grid">
+      <div class="card">
+        <h3>Prompt Library Automator</h3>
+        <p>Generate optimized prompt templates for AI tasks.</p>
+        <div class="demo-container">
+          <input type="text" id="prompt-task" placeholder="Enter task (e.g., Write a blog post)">
+          <select id="prompt-model">
+            <option value="gemini-1.5-pro">Gemini 1.5 Pro</option>
+            <option value="gemini-1.5-flash">Gemini 1.5 Flash</option>
+          </select>
+          <button id="generate-prompt" class="btn">Generate Prompt</button>
+          <div id="prompt-output" class="demo-output"></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Freelance Chatbot Builder</h3>
+        <p>Build a custom chatbot with configurable settings.</p>
+        <div class="demo-container">
+          <input type="text" id="chatbot-greeting" placeholder="Enter greeting (e.g., Hi there!)">
+          <select id="chatbot-tone">
+            <option value="friendly">Friendly</option>
+            <option value="professional">Professional</option>
+          </select>
+          <input type="text" id="chatbot-keywords" placeholder="Keywords (e.g., help, info)">
+          <input type="text" id="chatbot-input" placeholder="Test the chatbot...">
+          <button id="test-chatbot" class="btn">Test Chatbot</button>
+          <div id="chatbot-output" class="demo-output"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="card">
+      <h3>Resume</h3>
+      <p>Download my detailed resume in PDF format.</p>
+      <a href="./resume.pdf" download class="btn">Download PDF</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: aisebastianfletcher@gmail.com</p>
+      <p>Phone: +44 07359168434</p>
+      <p>Location: Manchester M41DY</p>
+      <h3>References</h3>
+      <p>Morgan Christian, BD PROTOTYPES / CEO</p>
+      <p>Phone: +44 7850547087</p>
+      <p>Email: morgan@bdprototypes.co.uk</p>
+    </div>
+  </section>
+
+  <section id="chatbot">
+    <h2>Sebastian's Assistant</h2>
+    <div id="chat-window">
+      <div id="chat-log"></div>
+      <input type="text" id="user-input" placeholder="Ask any question..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sebastian Fletcher. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
